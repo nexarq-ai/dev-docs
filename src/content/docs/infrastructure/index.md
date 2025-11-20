@@ -8,6 +8,13 @@ title: Infrastructure Components
 -   **Thread/Process-Based (Apache)**: Creates a new thread/process for each connection. Good for CPU-bound tasks but memory-intensive under high concurrency. [Apache HTTP Server Documentation](https://httpd.apache.org/docs/).
 -   **Event-Driven (Nginx)**: Uses a non-blocking, asynchronous event loop. Handles thousands of connections with a single worker process. Ideal for I/O-bound tasks and high concurrency. [Nginx Architecture Explained](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/).
 
+
+### Reverse Proxy
+Intermediary between client and origin. [What is a Reverse Proxy? (Cloudflare)](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/).
+-   **SSL Termination**: Offloads decryption CPU cost from backend servers.
+-   **Connection Pooling**: Maintains keep-alive connections to backends to reduce TCP handshake overhead.
+-   **Buffering**: Reads slow client uploads completely before sending to backend (prevents "Slowloris" attacks).
+
 ### Load Balancers
 Distributes traffic across backend servers to ensure availability and scalability. [What is Load Balancing? (Cloudflare)](https://www.cloudflare.com/learning/performance/what-is-load-balancing/).
 -   **L4 Load Balancing (Transport)**: Decisions based on IP/Port. Fast, packet-level. No visibility into HTTP headers.
@@ -16,12 +23,6 @@ Distributes traffic across backend servers to ensure availability and scalabilit
     -   **Round Robin**: Sequential distribution.
     -   **Least Connections**: Sends to server with fewest active connections.
     -   **Consistent Hashing**: Maps keys (e.g., User ID) to servers; minimizes reshuffling when servers are added/removed.
-
-### Reverse Proxy
-Intermediary between client and origin. [What is a Reverse Proxy? (Cloudflare)](https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/).
--   **SSL Termination**: Offloads decryption CPU cost from backend servers.
--   **Connection Pooling**: Maintains keep-alive connections to backends to reduce TCP handshake overhead.
--   **Buffering**: Reads slow client uploads completely before sending to backend (prevents "Slowloris" attacks).
 
 ### CDN (Content Delivery Network)
 -   **Edge Caching**: Storing static assets (images, CSS, JS) at the network edge (PoPs) to reduce latency and origin load. [What is a CDN? (Cloudflare)](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/).
