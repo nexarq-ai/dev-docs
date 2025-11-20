@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 import cloudflare from '@astrojs/cloudflare';
+import mermaid from 'astro-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
@@ -54,8 +55,28 @@ export default defineConfig({
 						{ label: 'Security: WAAP', slug: 'security/waap' },
 					],
 				},
+				{
+					label: 'Developer Services',
+					items: [
+						{
+							label: 'Compute',
+							items: [
+								{ label: 'Introduction', slug: 'developer-services/compute' },
+								{
+									label: 'JavaScript',
+									items: [
+										{ label: 'Basics & Event Loop', slug: 'developer-services/compute/javascript/basics' },
+										{ label: 'V8 Engine', slug: 'developer-services/compute/javascript/v8' },
+									],
+								},
+							],
+						},
+						{ label: 'Databases', slug: 'developer-services/databases' },
+					],
+				},
 			],
 		}),
+		mermaid(),
 	],
 
 	adapter: cloudflare({
