@@ -71,7 +71,21 @@ export default defineConfig({
 								},
 							],
 						},
-						{ label: 'Databases', slug: 'developer-services/databases' },
+						{
+							label: 'Databases',
+							items: [
+								{ label: 'Overview', slug: 'developer-services/databases' },
+								{ label: 'SQL', slug: 'developer-services/databases/sql' },
+								{
+									label: 'NoSQL',
+									items: [
+										{ label: 'MongoDB', slug: 'developer-services/databases/nosql/mongodb' },
+										{ label: 'DynamoDB', slug: 'developer-services/databases/nosql/dynamodb' },
+									],
+								},
+								{ label: 'Cloudflare Data', slug: 'developer-services/databases/cloudflare' },
+							],
+						},
 					],
 				},
 			],
