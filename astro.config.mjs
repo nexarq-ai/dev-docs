@@ -10,7 +10,7 @@ export default defineConfig({
 	site: 'https://docs.nexarq.ai',
 	integrations: [
 		starlight({
-			title: 'Nexarq Docs',
+			title: 'nexarq Docs',
 			customCss: ['./src/styles/custom.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nexarq-ai/dev-docs' }],
 			sidebar: [
