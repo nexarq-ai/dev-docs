@@ -9,8 +9,8 @@ export default defineConfig({
 	site: 'https://docs.nexarq.ai',
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Nexarq Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nexarq-ai/dev-docs' }],
 			sidebar: [
 				{
 					label: 'Operating System',
