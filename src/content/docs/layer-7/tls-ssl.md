@@ -5,13 +5,13 @@ title: TLS/SSL
 ## Transport Layer Security
 
 ### Concepts
--   **PKI (Public Key Infrastructure)**: Framework for digital certificates.
+-   **PKI (Public Key Infrastructure)**: Framework for digital certificates. [What is PKI? (Cloudflare)](https://www.cloudflare.com/learning/ssl/what-is-pki/).
 -   **Chain of Trust**: Root CA -> Intermediate CA -> Leaf Certificate.
 -   **Symmetric Encryption**: Fast, uses shared key (AES, ChaCha20). Used for data transfer.
 -   **Asymmetric Encryption**: Slow, uses Public/Private key pair (RSA, ECC). Used for key exchange.
 
 ### The Handshake (Simplified)
-1.  **Client Hello**: Supported versions, cipher suites, random bytes.
+1.  **Client Hello**: Supported versions, cipher suites, random bytes. [What happens in a TLS Handshake? (Cloudflare)](https://www.cloudflare.com/learning/ssl/what-happens-in-a-tls-handshake/).
 2.  **Server Hello**: Selected version/cipher, Server Certificate.
 3.  **Key Exchange**: Diffie-Hellman (ECDHE) to agree on a shared secret (Session Key).
 4.  **Finished**: Verify integrity.

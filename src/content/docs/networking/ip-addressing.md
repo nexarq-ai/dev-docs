@@ -5,8 +5,8 @@ title: IP Addressing
 ## Addressing & Subnetting
 
 ### IPv4 & CIDR (Classless Inter-Domain Routing)
--   **Structure**: 32-bit address.
--   **CIDR Notation**: `IP/PrefixLength` (e.g., `192.0.2.0/24`).
+-   **Structure**: 32-bit address. [IPv4 vs IPv6 (Google)](https://cloud.google.com/network-connectivity/docs/vpn/concepts/ipv4-ipv6-overview).
+-   **CIDR Notation**: `IP/PrefixLength` (e.g., `192.0.2.0/24`). [What is CIDR? (DigitalOcean)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking).
     -   **Prefix**: Identifies the network.
     -   **Suffix**: Identifies the host.
 -   **Subnetting**: Breaking a large block into smaller networks for efficiency and security.
@@ -21,7 +21,7 @@ Non-routable on the public internet. Used within LANs/VPCs.
 -   `192.168.0.0/16`
 
 ### NAT (Network Address Translation)
-Required to bridge Private and Public space due to IPv4 exhaustion.
+Required to bridge Private and Public space due to IPv4 exhaustion. [What is NAT? (Cisco)](https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/26704-nat-faq-00.html).
 -   **SNAT (Source NAT)**: Internal hosts accessing the internet. Router replaces Source IP with Public IP.
 -   **DNAT (Destination NAT)**: External traffic accessing internal service (Port Forwarding).
 -   **CGNAT (Carrier-Grade NAT)**: ISPs sharing public IPs among many customers.

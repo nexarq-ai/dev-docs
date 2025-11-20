@@ -7,19 +7,19 @@ title: Three-Tier Architecture
 The Three-Tier architecture is the foundational pattern for enterprise web applications, enforcing separation of concerns.
 
 ### 1. Presentation Tier (Client)
--   **Responsibility**: Rendering UI and capturing user input.
+-   **Responsibility**: Rendering UI and capturing user input. [Client-side web APIs (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction).
 -   **Technologies**: SPA Frameworks (React, Vue), Mobile SDKs (iOS, Android).
 -   **State**: Ideally stateless; maintains session via tokens (JWT) or cookies.
 -   **Optimization**: Assets served via CDN to minimize latency.
 
 ### 2. Application Tier (Logic)
--   **Responsibility**: Business logic, authorization, data processing.
+-   **Responsibility**: Business logic, authorization, data processing. [What is Middleware? (Red Hat)](https://www.redhat.com/en/topics/middleware/what-is-middleware).
 -   **Technologies**: REST/GraphQL APIs (Node.js, Go, Python, Java).
 -   **Scaling**: Horizontal scaling behind a Load Balancer.
 -   **Statelessness**: Crucial for scaling. No local session storage; use external stores (Redis) or stateless tokens.
 
 ### 3. Data Tier (Persistence)
--   **Responsibility**: Data storage and retrieval.
+-   **Responsibility**: Data storage and retrieval. [Types of Databases (AWS)](https://aws.amazon.com/products/databases/).
 -   **Technologies**:
     -   **RDBMS**: PostgreSQL, MySQL (ACID compliance).
     -   **NoSQL**: MongoDB, DynamoDB (Flexible schema, high throughput).

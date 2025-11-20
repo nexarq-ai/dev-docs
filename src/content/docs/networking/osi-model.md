@@ -4,7 +4,7 @@ title: OSI Model (7 Layers)
 
 ## Encapsulation & Troubleshooting
 
-The OSI model provides a framework for understanding network interactions. In practice, we focus on the **TCP/IP** model, but OSI terminology is standard for troubleshooting.
+The OSI model provides a framework for understanding network interactions. In practice, we focus on the **TCP/IP** model, but OSI terminology is standard for troubleshooting. [What is the OSI Model? (Cloudflare)](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/).
 
 ### The Layers & Troubleshooting
 
