@@ -29,17 +29,17 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Infrastructure Components',
-					items: [
-						{ label: 'Infrastructure Components', slug: 'infrastructure' },
-					],
-				},
-				{
 					label: 'Layer 7',
 					items: [
 						{ label: 'DNS Fundamentals', slug: 'layer-7/dns' },
 						{ label: 'HTTP', slug: 'layer-7/http' },
 						{ label: 'TLS/SSL', slug: 'layer-7/tls-ssl' },
+					],
+				},
+				{
+					label: 'Infrastructure Components',
+					items: [
+						{ label: 'Infrastructure Components', slug: 'infrastructure' },
 					],
 				},
 				{
