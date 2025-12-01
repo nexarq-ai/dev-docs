@@ -53,6 +53,7 @@ export default defineConfig({
 					label: 'Security',
 					items: [
 						{ label: 'Security: WAAP', slug: 'security/waap' },
+						{ label: 'Cloudflare Security', slug: 'security/cloudflare-security' },
 					],
 				},
 				{
