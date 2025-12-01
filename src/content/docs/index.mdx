@@ -1,0 +1,38 @@
+---
+title: Developer Documentation
+description: Get started with our developer documentation.
+template: splash
+hero:
+  tagline: Welcome to the developer documentation!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /operating-system/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Topics
+
+<CardGrid stagger>
+	<Card title="Operating System" icon="linux">
+		Learn about [Operating Systems & Linux Fundamentals](/operating-system/).
+	</Card>
+	<Card title="Networking" icon="seti:network">
+		Understand [Networking Fundamentals](/networking/osi-model/), including OSI Model, IP, and Routing.
+	</Card>
+	<Card title="Infrastructure" icon="seti:db">
+		Explore [Infrastructure Components](/infrastructure/) like Web Servers, Load Balancers, and CDNs.
+	</Card>
+	<Card title="Layer 7" icon="seti:html">
+		Deep dive into [DNS, HTTP, and TLS/SSL](/layer-7/dns/).
+	</Card>
+    <Card title="Design" icon="pencil">
+        Learn about [Three-Tier Architecture](/design/three-tier/) and Key Design Concerns.
+    </Card>
+    <Card title="Security" icon="seti:lock">
+        Understand [WAAP Security](/security/waap/) (DDoS, WAF, Bot, API).
+    </Card>
+</CardGrid>
