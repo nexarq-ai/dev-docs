@@ -11,8 +11,16 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'nexarq Docs',
+			description: 'Comprehensive developer documentation for nexarq, covering operating systems, networking, infrastructure, and security.',
+			favicon: '/favicon.svg',
 			customCss: ['./src/styles/custom.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nexarq-ai/dev-docs' }],
+			head: [
+				{ tag: 'meta', attrs: { name: 'keywords', content: 'nexarq, documentation, developer, networking, security, infrastructure, cloudflare' } },
+				{ tag: 'meta', attrs: { name: 'author', content: 'nexarq' } },
+				{ tag: 'meta', attrs: { property: 'og:image', content: '/favicon.svg' } },
+				{ tag: 'meta', attrs: { name: 'twitter:card', content: 'summary' } },
+			],
 			sidebar: [
 				{
 					label: 'Operating System',
