@@ -10,7 +10,7 @@ export default defineConfig({
 	site: 'https://docs.nexarq.ai',
 	integrations: [
 		starlight({
-			title: 'nexarq Docs',
+			title: 'nexarq docs',
 			description: 'Comprehensive developer documentation for nexarq, covering operating systems, networking, infrastructure, and security.',
 			favicon: '/favicon.svg',
 			customCss: ['./src/styles/custom.css'],
