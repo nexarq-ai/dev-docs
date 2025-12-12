@@ -105,7 +105,10 @@ export default defineConfig({
 			],
 		}),
 		mermaid(),
-		sitemap(),
+		sitemap({
+			filter: (page) => !page.includes('/404'),
+			customPages: [],
+		}),
 	],
 
 	adapter: cloudflare({
