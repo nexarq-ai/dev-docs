@@ -6,7 +6,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://docs.nexarq.ai/sitemap.xml
+Sitemap: https://docs.nexarq.ai/sitemap-index.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1

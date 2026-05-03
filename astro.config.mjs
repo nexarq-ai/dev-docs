@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
-
 import cloudflare from '@astrojs/cloudflare';
 import mermaid from 'astro-mermaid';
 
@@ -107,7 +106,6 @@ export default defineConfig({
 		mermaid(),
 		sitemap({
 			filter: (page) => !page.includes('/404'),
-			customPages: [],
 		}),
 	],
 
