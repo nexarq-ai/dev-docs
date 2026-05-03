@@ -108,7 +108,6 @@ export default defineConfig({
 		sitemap({
 			filter: (page) => !page.includes('/404'),
 			customPages: [],
-			sitemapFileName: 'sitemap.xml',
 		}),
 	],
 
@@ -120,6 +119,8 @@ export default defineConfig({
 			extend: {
 				exclude: [
 					{ pattern: '/sitemap.xml' },
+					{ pattern: '/sitemap-index.xml' },
+					{ pattern: '/sitemap-0.xml' },
 				],
 			},
 		},
