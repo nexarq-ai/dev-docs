@@ -118,7 +118,6 @@ export default defineConfig({
 		routes: {
 			extend: {
 				exclude: [
-					{ pattern: '/sitemap.xml' },
 					{ pattern: '/sitemap-index.xml' },
 					{ pattern: '/sitemap-0.xml' },
 				],
