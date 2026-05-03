@@ -1,12 +1,12 @@
 # robots.txt for nexarq documentation
 # Allow all search engines to crawl the site
+# Last updated: 2026-05-03
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://docs.nexarq.ai/sitemap-index.xml
-Sitemap: https://docs.nexarq.ai/sitemap-0.xml
+Sitemap: https://docs.nexarq.ai/sitemap.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1
